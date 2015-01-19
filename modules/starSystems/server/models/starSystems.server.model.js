@@ -23,7 +23,11 @@ var StarSystemSchema = new Schema({
 	user: {
 		type: Schema.ObjectId,
 		ref: 'User'
-	}
+	},
+	neighbours: [{name:String, distance: Number}],
+	commodities: [{name:String, buy: Number, sell:Number, demand: String, supply: String}],
+	stations: [{name:String, distance: Number, blackMarket: Boolean}],
+	notes: String
 });
 
 mongoose.model('StarSystem', StarSystemSchema);
