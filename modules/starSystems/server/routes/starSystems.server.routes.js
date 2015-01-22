@@ -18,6 +18,11 @@ module.exports = function(app) {
 		.put(starSystems.update)
 		.delete(starSystems.delete);
 
-	// Finish by binding the article middleware
+    app.route('/api/starSystemsByName/:systemName').all(systemsPolicy.isAllowed)
+        .get(starSystems.systemByName);
+
+
+    // Finish by binding the article middleware
 	app.param('systemId', starSystems.systemByID);
+    app.param('systemName', starSystems.systemByName);
 };

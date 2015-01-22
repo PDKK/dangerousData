@@ -30,4 +30,4 @@ var StarSystemSchema = new Schema({
 	notes: String
 });
 
-mongoose.model('StarSystem', StarSystemSchema);
+mongoose.model('StarSystem', StarSystemSchema, 'starSystems');

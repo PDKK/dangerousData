@@ -13,6 +13,7 @@
     "angular-ui-router": "~0.2.10",
     "angular-file-upload": "~1.1.5",
     "angular-grid": "~2.0.14",
-    "ng-table": "~0.4.3"
+    "ng-table": "~0.4.3",
+    "angular-strap": "~2.1.6"
   }
 }

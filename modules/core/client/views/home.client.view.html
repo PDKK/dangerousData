@@ -1,4 +1,10 @@
 <section data-ng-controller="HomeController">
+    <form class="form-inline" role="form">
+        <div class="form-group">
+            <label><i class="fa fa-globe"></i> State</label>
+            <input type="text" class="form-control" ng-model="selectedSystem" ng-options="selectedSystem for selectedSystem in getSystem($viewValue)" placeholder="Enter state" bs-typeahead>
+        </div>
+    </form>
 	<div class="row">
 		<div class="col-md-4">
 			<h2>
