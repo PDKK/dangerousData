@@ -1,9 +1,15 @@
 <section data-ng-controller="HomeController">
     <form class="form-inline" role="form">
         <div class="form-group">
-            <label><i class="fa fa-globe"></i> State</label>
-            <input type="text" class="form-control" ng-model="selectedSystem" ng-options="selectedSystem for selectedSystem in getSystem($viewValue)" placeholder="Enter state" bs-typeahead>
+            <label><i class="fa fa-globe"></i> System Name</label>
+            <input type="text"
+                   class="form-control"
+                   ng-model="selectedSystem"
+                   typeahead="place for place in getSystem($viewValue)"
+                   placeholder="Enter state"/>
+            <input class="btn btn-default" type="button" value="Create"/>
         </div>
+
     </form>
 	<div class="row">
 		<div class="col-md-4">
@@ -20,6 +26,9 @@
 			<h2>
 				<strong>N</strong>otes
 			</h2>
+            <textarea class="form-control" data-ng-model="">
+
+            </textarea>
 		</div>
 	</div>
 </section>

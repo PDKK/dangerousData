@@ -15,11 +15,10 @@ module.exports = {
 				'public/lib/angular-animate/angular-animate.js',
 				'public/lib/angular-ui-router/release/angular-ui-router.js',
 				'public/lib/angular-ui-utils/ui-utils.js',
+                'public/lib/angular-bootstrap/ui-bootstrap.js',
 				'public/lib/angular-bootstrap/ui-bootstrap-tpls.js',
 				'public/lib/angular-file-upload/angular-file-upload.js',
-                'public/lib/angular-animate/angular-animate.js',
-				'public/lib/angular-strap/dist/angular-strap.js',
-                'public/lib/angular-strap/dist/angular-strap.tpl.js'
+                'public/lib/angular-animate/angular-animate.js'
 			],
 			tests: ['public/lib/angular-mocks/angular-mocks.js']
 		},
